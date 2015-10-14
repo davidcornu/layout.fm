@@ -1,0 +1,72 @@
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", 'Helvetica Neue', sans-serif;
+  color: #6F7275;
+  font-size: 0.875em;
+}
+
+p {
+  line-height: 1.4em;
+  margin: 0 0 1.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.85em;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+
+  a {
+    color: #333;
+  }
+
+  a:hover {
+    color: $accent;
+  }
+}
+
+h3 {
+  font-size: 1.14em;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+}
+
+ul, ol {
+  line-height: 1.6em;
+  padding: 0 0 0 1.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  margin: .25em 0;
+}
+
+ul > li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(black, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: .5em;
+  right: 100%;
+  margin-right: .5em;
+}

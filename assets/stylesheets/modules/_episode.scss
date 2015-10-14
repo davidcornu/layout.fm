@@ -1,0 +1,37 @@
+audio {
+  width: 100%;
+}
+
+.section {
+  & + & {
+    border-top: 1px solid rgba(black, 0.1);
+  }
+
+  @include media("mobile") {
+    padding: 1.5em 1.5em 1.5em 0;
+    margin-left: 1.5em;
+  }
+
+  @include media("tablet") {
+    padding: 1.5em $tablet-padding 1.5em 0;
+    margin-left: $tablet-padding;
+  }
+
+  @include media("desktop") {
+    padding: 3em 0;
+    padding-right: 10%;
+  }
+}
+
+.section-header {
+  margin-bottom: 1.5em;
+}
+
+time {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.episode-shownotes {
+  margin-top: 2em;
+}

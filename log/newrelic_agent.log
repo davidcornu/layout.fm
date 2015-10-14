@@ -1,0 +1,25 @@
+# Logfile created on 2015-10-11 20:18:41 -0400 by logger.rb/41954
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : Starting the New Relic agent in "development" environment.
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] WARN : No configuration file found. Working directory = /Users/kevinclark/Sites/layout.fm
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] WARN : Looked in these locations (based on defaults): /Users/kevinclark/Sites/layout.fm/config/newrelic.yml, /Users/kevinclark/Sites/layout.fm/newrelic.yml, /Users/kevinclark/Sites/layout.fm/config/newrelic.yml, /Users/kevinclark/Sites/layout.fm/newrelic.yml, /Users/kevinclark/.newrelic/newrelic.yml, /Users/kevinclark/newrelic.yml
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : Environment: development
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : No known dispatcher detected.
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : Application: development
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : Installing Net instrumentation
+[10/11/15 20:18:41 -0400 Kevins-MacBook-Pro.local (11655)] INFO : Finished instrumentation
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Starting the New Relic agent in "development" environment.
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] WARN : No configuration file found. Working directory = /Users/kevinclark/Sites/layout.fm
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] WARN : Looked in these locations (based on defaults): /Users/kevinclark/Sites/layout.fm/config/newrelic.yml, /Users/kevinclark/Sites/layout.fm/newrelic.yml, /Users/kevinclark/Sites/layout.fm/config/newrelic.yml, /Users/kevinclark/Sites/layout.fm/newrelic.yml, /Users/kevinclark/.newrelic/newrelic.yml, /Users/kevinclark/newrelic.yml
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Environment: development
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Dispatcher: Puma
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Application: development
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Installing Net instrumentation
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Installing deferred Rack instrumentation
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Installing Rack::Builder middleware instrumentation
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Finished instrumentation
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Doing deferred dependency-detection before Rack startup
+[10/11/15 20:19:14 -0400 Kevins-MacBook-Pro.local (11695)] INFO : Installing Sinatra instrumentation

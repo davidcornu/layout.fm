@@ -1,0 +1,12 @@
+<div class="section">
+  <header class="section-header">
+    <h2><a href="<%= episode.url %>"><%= episode.title %></a></h2>
+    <time><%= episode.data['date'].strftime('%A, %-d %B %Y') %></time>
+  </header>
+  <p><%= episode.data['description'] %></p>
+  <audio src="<%= episode.data['audio_url'] %>" controls preload="none"></audio>
+  <div class="episode-shownotes">
+    <h3>Show notes</h3>
+    <%= episode.body %>
+  </div>
+</div>

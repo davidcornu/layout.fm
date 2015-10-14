@@ -1,0 +1,18 @@
+
+// Breakpoints
+$breakpoint--medium: 650px;
+$breakpoint--large: 900px;
+
+$queries: (
+  "mobile": "(max-width: #{$breakpoint--medium - 1})",
+  "tablet-down": "(max-width: #{$breakpoint--large - 1})",
+  "tablet": "(min-width: #{$breakpoint--medium}) and (max-width: #{$breakpoint--large - 1})",
+  "tablet-up": "(min-width: #{$breakpoint--medium})",
+  "desktop": "(min-width: #{$breakpoint--large})"
+);
+
+@mixin media($query) {
+  @media #{map-get($queries, $query)} {
+    @content;
+  }
+}
