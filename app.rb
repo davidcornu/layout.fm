@@ -32,7 +32,7 @@ class Page
     @data['number'] = File.basename(file_path, '.md')
     @title = "#{@data['number']}: #{@data['title']}"
     @body = render file.sub(/---[\s\S]*?---/, '')
-    @url = "http://127.0.0.1:9393/episodes/#{@data['number']}"
+    @url = "http://layout.fm/episodes/#{@data['number']}"
   end
 
   def render(content)

@@ -33,7 +33,7 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", :version
         end
         xml.itunes :summary, episode.data['description']
         xml.itunes :duration, episode.data['duration']
-        xml.enclosure :url => episode.data['audio_url'], :length => 'FIX ME PLEASE', :type => 'audio/mpeg'
+        xml.enclosure :url => episode.data['audio_url'], :length => episode.data['file_size'], :type => 'audio/mpeg'
         xml.itunes :explicit, 'no'
         xml.itunes :author, author
         xml.itunes :image, :href => artwork
