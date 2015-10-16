@@ -2,7 +2,7 @@ author = "Kevin Clark and Rafael Conde"
 artwork = 'http://layout.fm/assets/artwork.jpg'
 
 xml.instruct! :xml, :version => '1.0'
-xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", :version => "2.0" do
+xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:content" => "http://purl.org/rss/1.0/modules/content/", :version => "2.0" do
   xml.channel do
     xml.title "Layout"
     xml.link "http://layout.fm"
@@ -37,6 +37,9 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", :version
         xml.itunes :explicit, 'no'
         xml.itunes :author, author
         xml.itunes :image, :href => artwork
+        xml.content :encoded do
+          xml.cdata!(episode.body)
+        end
       end
     end
   end
