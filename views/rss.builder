@@ -1,16 +1,18 @@
 author = "Kevin Clark and Rafael Conde"
 artwork = 'http://layout.fm/assets/artwork.jpg'
+description = "Layout is a weekly podcast about design, technology, programming and everything else."
 
 xml.instruct! :xml, :version => '1.0'
 xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:content" => "http://purl.org/rss/1.0/modules/content/", :version => "2.0" do
   xml.channel do
     xml.title "Layout"
     xml.link "http://layout.fm"
-    xml.description "Layout is a weekly podcast about design, technology, programming and everything else."
+    xml.description description
     xml.language 'en'
     xml.pubDate episodes.first.data['date'].rfc822()
     xml.lastBuildDate episodes.first.data['date'].rfc822()
     xml.itunes :author, author
+    xml.itunes :summary, description
     xml.itunes :keywords, "design, development, tech"
     xml.itunes :explicit, 'no'
     xml.itunes :image, :href => artwork
