@@ -13,6 +13,7 @@ xml.rss "xmlns:itunes" => "http://www.itunes.com/dtds/podcast-1.0.dtd", "xmlns:c
     xml.lastBuildDate episodes.first.data['date'].rfc822()
     xml.itunes :author, author
     xml.itunes :summary, description
+    xml.itunes :subtitle, description
     xml.itunes :keywords, "design, development, tech"
     xml.itunes :explicit, 'no'
     xml.itunes :image, :href => artwork
