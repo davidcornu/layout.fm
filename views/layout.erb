@@ -24,8 +24,8 @@
             <svg width="97" height="38" viewBox="0 0 97 38" xmlns="http://www.w3.org/2000/svg"><path d="M79.994 8.525c0 4.517 3.797 8.18 8.48 8.18 4.686 0 8.483-3.663 8.483-8.18V.345H92.18v8.18h2.368-2.37l.003.117c0 1.973-1.658 3.572-3.705 3.572-2.046 0-3.705-1.6-3.705-3.572 0-.04 0-.078.002-.117h-2.37 2.368V.345h-4.776v8.18zm-35.476 10.58v18.007h-4.995V19.087L26.835.367h5.718l9.51 13.59L51.654.36h5.7L44.52 19.104zm-21.894 4.16H15.47l-.918 3.256-4.853.004L16.592.41h4.934l6.818 26.11H23.42l-.796-3.255zm-5.75-4.994H21.4l-2.105-8.6-2.42 8.6zm64.153 7.648v11.108h-4.994V25.918H59.285v-4.994H97v4.994H81.027zM4.994 32.032V.344H0V37.025h29.363v-4.994H4.993zm63.03-14.897c4.9 0 8.87-3.836 8.87-8.567 0-4.732-3.97-8.568-8.87-8.568-4.897 0-8.868 3.836-8.868 8.568 0 4.73 3.97 8.567 8.87 8.567zm.083-4.613c2.165 0 3.92-1.697 3.92-3.79 0-2.092-1.755-3.79-3.92-3.79-2.164 0-3.92 1.698-3.92 3.79 0 2.093 1.756 3.79 3.92 3.79z" fill="#50C54C" fill-rule="evenodd"/></svg>
           </a>
           <ul class="nav">
-            <li class="nav__item nav__item--selected"><a href="/" class="nav__link">Episodes</a></li>
-            <li class="nav__item"><a href="mailto: kevin@kevinclark.ca" class="nav__link">Feedback</a></li>
+            <li class="nav__item <%= 'nav__item--selected' if request.path_info == '/' %>"><a href="/" class="nav__link">Episodes</a></li>
+            <li class="nav__item <%= 'nav__item--selected' if request.path_info == '/feedback' %>"><a href="/feedback" class="nav__link">Feedback</a></li>
             <li class="nav__item"><a href="http://twitter.com/layoutfm" class="nav__link">Twitter</a></li>
           </ul>
         </header>

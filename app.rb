@@ -14,6 +14,15 @@ class App < Sinatra::Base
     builder :rss
   end
 
+  get '/feedback' do
+    puts current_page
+    erb :feedback
+  end
+
+  def current_page
+    request.path_info
+  end
+
   def episodes
     episodes = Dir["episodes/*"].map do |file_path|
       Page.new(file_path)
